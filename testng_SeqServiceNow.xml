@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ServiceNow">
+<parameter name="url" value="https://dev137833.service-now.com/"></parameter>
+<parameter name="username" value="admin"></parameter>
+<parameter name="password" value="Nithya@8421"></parameter>
+  <test thread-count="2" name="Test" verbose="2" >
+    <classes>
+      <class name="week5.day2.ServicenowMobile"/>
+      <class name="week5.day2.ServicenowNewProposal"/>
+      <class name="week5.day2.ServicenowNewCaller"/>
+      <class name="week5.day2.ServicenowKnowledge"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
